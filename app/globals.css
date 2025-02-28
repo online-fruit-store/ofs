@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light mode colors */
+    --color-light-primary: X Y Z;
+    --color-light-secondary: X Y Z;
+    --color-light-accent: X Y Z;
+    --color-light-background: X Y Z;
+    --color-light-text: X Y Z;
+    --color-light-neutralHard: X Y Z;
+    --color-light-neutral: X Y Z;
+    --color-light-neutralSoft: X Y Z;
+    --color-light-info: X Y Z;
+    --color-light-error: X Y Z;
+    --color-light-success: X Y Z;
+
+    /* Dark mode colors */
+    --color-dark-primary: X Y Z;
+    --color-dark-secondary: X Y Z;
+    --color-dark-accent: X Y Z;
+    --color-dark-background: X Y Z;
+    --color-dark-text: X Y Z;
+    --color-dark-neutralHard: X Y Z;
+    --color-dark-neutral: X Y Z;
+    --color-dark-neutralSoft: X Y Z;
+    --color-dark-info: X Y Z;
+    --color-dark-error: X Y Z;
+    --color-dark-success: X Y Z;
+  }
+}
+
+html {
+  --color-primary: var(--color-light-primary);
+  --color-secondary: var(--color-light-secondary);
+  --color-accent: var(--color-light-accent);
+  --color-background: var(--color-light-background);
+  --color-text: var(--color-light-text);
+  --color-neutral: var(--color-light-neutralHard);
+  --color-neutral: var(--color-light-neutral);
+  --color-neutral: var(--color-light-neutralSoft);
+  --color-neutral: var(--color-light-info);
+  --color-neutral: var(--color-light-error);
+  --color-neutral: var(--color-light-success);
+}
+
+html.dark {
+  color-scheme: dark;
+  --color-primary: var(--color-dark-primary);
+  --color-secondary: var(--color-dark-secondary);
+  --color-accent: var(--color-dark-accent);
+  --color-background: var(--color-dark-background);
+  --color-text: var(--color-dark-text);
+  --color-neutral: var(--color-dark-neutralHard);
+  --color-neutral: var(--color-dark-neutral);
+  --color-neutral: var(--color-dark-neutralSoft);
+  --color-neutral: var(--color-dark-info);
+  --color-neutral: var(--color-dark-error);
+  --color-neutral: var(--color-dark-success);
+}
