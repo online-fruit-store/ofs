@@ -1,4 +1,4 @@
-import db from "@/lib/db";
+import { db } from "@/lib";
 
 export async function selectAdmin(email: string) {
   return db.query("SELECT * FROM admins WHERE email = $1", [email]);

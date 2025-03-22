@@ -2,7 +2,7 @@ import { NextAuthOptions } from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 import PostgresAdapter from "@auth/pg-adapter";
 import { Adapter } from "next-auth/adapters";
-import db from "@/lib/db";
+import { db } from "@/lib";
 
 export const authOptions: NextAuthOptions = {
   providers: [

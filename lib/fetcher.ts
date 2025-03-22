@@ -1,9 +1,11 @@
+import { FetchErrorStatusCodes } from "@/types";
+
 // Custom error class to handle fetch errors
 export class FetchError extends Error {
   info: unknown;
-  status: number;
+  status: FetchErrorStatusCodes;
 
-  constructor(message: string, status?: number, info?: unknown) {
+  constructor(message: string, status?: FetchErrorStatusCodes, info?: unknown) {
     super(message);
     this.info = info;
     this.status = status ?? 500;

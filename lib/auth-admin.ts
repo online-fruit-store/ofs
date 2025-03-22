@@ -1,6 +1,6 @@
 import { getServerSession } from "next-auth";
-import { authOptions } from "@/lib/auth-options";
-import { selectAdmin } from "@/daos/user";
+import { authOptions } from "@/lib";
+import { selectAdmin } from "@/daos";
 
 export const isAdmin = async () => {
   const session = await getServerSession(authOptions);

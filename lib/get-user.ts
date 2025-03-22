@@ -1,6 +1,6 @@
 import { getServerSession } from "next-auth";
-import { authOptions } from "@/lib/auth-options";
-import { selectUser } from "@/daos/user";
+import { authOptions } from "@/lib";
+import { selectUser } from "@/daos";
 
 export const getSessionUserId = async () => {
   const session = await getServerSession(authOptions);
